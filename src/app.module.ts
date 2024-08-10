@@ -5,7 +5,7 @@ import { InventoryModule } from './inventory/inventory.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/inventory-service'),
+    MongooseModule.forRoot('mongodb://127.0.0.1:27017/inventory-service'),
     InventoryModule,
     HttpModule, // Add HttpModule for inter-service communication
   ],
